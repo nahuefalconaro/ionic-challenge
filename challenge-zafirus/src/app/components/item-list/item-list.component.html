@@ -1,0 +1,6 @@
+<ion-item button (click)="setCharacter()">
+  <ion-thumbnail slot="start">
+    <img [src]="utils.extensionImg(character.thumbnail)">
+  </ion-thumbnail>
+  <ion-label>{{character.name}}</ion-label>
+</ion-item>

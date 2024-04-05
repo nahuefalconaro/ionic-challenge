@@ -1,0 +1,19 @@
+- Para la interface utilice una pagina que las genera para ahorrar tiempo: QuickType
+- Dado que no aplique estilos diferentes y no hay funcionalidad extra que lo requiera, no realice
+codigo en scss, conozco el poder del mismo, lo use poco tiempo profesionalmente.
+- Decidi dejar el home component como inicio de la aplicacion. Tenia la pagina characters la cual
+importaba dentro de home, no lo vi necesario para este ejemplo ya que era un componente que Tenia solo una
+importacion al otro componente por lo que deje que home sea lo inicial pero si cambiando 
+la url para que sea descriptiva.
+
+- Maneje los datos del heroe mediante un atributo en el servicio para evitar hacer una nueva llamada a la api
+la cual ofrecia un getById y se pedia que: Los datos deben ser enviados desde la pantalla de Listado, por lo que le paso
+el id, este id podria usarse claramente para obtener la informacion, pero opte por generar un atributo en el servicio
+que guarde el heroe seleccionado.
+
+
+- El metodo extensionImg el cual uso para crear la url de las imagenes opte por que sea una funcion en utils.
+
+- Conozco Capacitor lo use para pruebas y un aplicativo que realice con funcionalidades con la camara.
+Dado que en este caso me sentia mas comodo utilizando HttpClient opte por este, ya que no conocia las llamadas
+Rest con capacitors, las cuales estuve leyendo pero conozco mas HttpClient

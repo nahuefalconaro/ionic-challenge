@@ -1,0 +1,13 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      {{"PERSONAJES" | translate}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list *ngFor="let character of charactersData; let i = index">
+    <app-item-list [character]="character"></app-item-list>
+  </ion-list>
+</ion-content>
